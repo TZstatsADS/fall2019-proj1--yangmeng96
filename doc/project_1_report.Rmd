@@ -10,20 +10,14 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r load libraries, warning=FALSE, message=FALSE, echo=F}
-library(tm)
 library(data.table)
 library(tidytext)
 library(tidyverse)
-library(DT)
-library(plotly)
 library(devtools)
 library(ggplot2)
-library(tm)
-library(scales)
 library(wordcloud2)
 library(gridExtra)
 library(ngram)
-library(shiny)
 library(usmap)
 library(Rmisc)
 ```
