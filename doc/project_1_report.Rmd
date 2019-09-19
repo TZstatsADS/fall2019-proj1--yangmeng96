@@ -9,6 +9,18 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+```{r, warning=FALSE, message=FALSE, echo=F}
+packages.used=c("data.table", "tidytext", "tidyverse", "devtools", "ggplot2", "gridExtra", "ngram", "usmap", "Rmisc")
+packages.needed=setdiff(packages.used, 
+                        intersect(installed.packages()[,1], 
+                                  packages.used))
+if(length(packages.needed)>0){
+  install.packages(packages.needed, dependencies = TRUE)
+}
+devtools::install_github("lchiffon/wordcloud2", force = T, quiet = T)
+```
+
+
 ```{r load libraries, warning=FALSE, message=FALSE, echo=F}
 library(data.table)
 library(tidytext)
