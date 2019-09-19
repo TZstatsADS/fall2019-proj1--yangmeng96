@@ -47,7 +47,7 @@ dt_artist <- fread('../data/artists.csv')
 
 # Why?
 
-I used was the given cleaned data with stemmed words to do the project. First I want to take a look at the overall frequency of words in lyrics.
+I used the given cleaned data with stemmed words to do the project. By converting all the letters to the lower case, and removing punctuation, numbers, empty words and extra white space, the data cleaning has been done by the given code. After word stemming and stem completion part, I used the output file "processed_lyrics.RData" to do the exploration. First I want to take a brief look at the overall frequency of words in lyrics.
 
 From the wordcloud plot of all the stemmed words, we can see high frequency words. Just ignore those "youre"s and "ill"s, because they come from "you're" and "I'll" in the original texts. These words can be cleaned, however, I will only focus on something else, so it doesn't matter to clean them or not.
 
