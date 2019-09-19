@@ -16,6 +16,10 @@ Term: Fall 2019
 
 <img src="figs/Day&night.png" width="800">
 
+### [Project Report](doc/project_1_report.html)
+
+### [Project Code](doc/project_1_report.Rmd)
+
 Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is orgarnized as follows.
 
 ```
