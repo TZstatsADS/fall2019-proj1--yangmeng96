@@ -135,7 +135,7 @@ The two barplots below are really interesting. For word "day", 2 of the four mai
 
 For word "night", the proportion of all of the main genres were going down except Rock. Although Rock is the largest genre, its proportion of "night" before 2000 was too small, so it didn't make the proportion of "night" increase.
 
-Now let's look at the plots from another angle, for Hip-Hop and Pop, the proportion of "day" and "night" both went down around 2000. For Rock, both were going up. For Metal, the proportion change of words "day" and "night" are different around 2000. Only Metal is different! So an important reason of the different direction of change in "day" and "night" is, the genre Metal led the difference.
+Now let's look at the plots from another angle, for Hip-Hop and Pop, the proportion of "day" and "night" both went down around 2000. For Rock, both were going up. For Metal, the proportion change of words "day" and "night" are different around 2000. Only Metal had different directions in proportion of "day" and "night", which was the same as the overall trend. So an important reason of the different direction of change in "day" and "night" is, the genre Metal led the difference.
 
 ```{r, echo=F}
 decade4plot <- rep(c("1995-2000", "2000-2005"), each=2)
@@ -178,13 +178,14 @@ mywc <- function(trigrams_count, w2, s=.3, c, b){
 }
 ```
 
-From the wordcloud below, we can see that the trigrams about day and night were becoming happy, not just about dark, devil, or blood, which are typical topics for traditional Metal music. 
-
-For "night", they used to talked more about "devil", "blood", "cry", and "dead", but in 21st century it became more about "party" and "illuminate". It is the same case in word "day", the high-frequency topics were changed from "bane" and "broken" to "lady" and "baby". 
 
 ![](../figs/nu.png){width=100%}
 
 The phemonema explains the decrease in proportion "night" and the increase in "day". I need to introduce Nu Metal here, which is a new subgenre of Metal developed in the late 1990's, and then became a huge part of Metal in 21st century. The presense of Nu Metal changed Metal a lot. As Josh Chesler of the Phoenix New Times, the lyrics of Deftones, who were once in a Nu Metal band said, "tend to have complex allusions and leave the songs open to many different interpretations" (from Wikipedia), Nu Metal wanted to have more topics in the lyrics, rather than talking about blood, death and dark over and over again. Naturally, the proportion of "night" decreased together with these traditional Metal topics, because these elements are always associated with nights.
+
+From the wordcloud below, we can see that the trigrams about day and night were becoming happy, not just about dark, devil, or blood, which are typical topics for traditional Metal music. 
+
+For "night", they used to talked more about "devil", "blood", "cry", and "dead", but in 21st century it became more about "party" and "illuminate". It is the same case in word "day", the high-frequency topics were changed from "bane" and "broken" to "lady" and "baby". 
 
 **1995-2000 Night**
 
